@@ -1,0 +1,133 @@
+/* General Body Styling */
+body {
+  background: linear-gradient(135deg, #1e3c72, #2a69ac); /* Vibrant blue gradient */
+  color: #ffffff; /* Light text color */
+  font-family: 'Helvetica Neue', sans-serif; /* Clean, professional font */
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: rgba(30, 60, 114, 0.9); /* Darker transparent navbar */
+  padding: 10px;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+  color: #ffffff; /* White text for navbar */
+  font-weight: bold;
+  font-size: 20px; /* Larger font for brand and links */
+  transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+.navbar .nav-link:hover {
+  color: #bb86fc; /* Purple hover effect */
+}
+
+.navbar-toggler {
+  border-color: #ffffff; /* White border for toggler */
+}
+
+/* Heading Styling */
+h2 {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 36px; /* Larger heading */
+}
+
+/* Form Styling */
+form {
+  background-color: #40444b; /* Slightly lighter background for form */
+  padding: 30px; /* Increased padding for larger div */
+  border-radius: 10px; /* Rounded corners for the form */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Shadow effect for depth */
+  margin-top: 20px; /* Margin for spacing */
+}
+
+/* Input and Textarea Styling */
+label {
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  background-color: #2c2f33; /* Input background */
+  color: #ffffff; /* Text color for inputs */
+  border: 1px solid #99aab5; /* Border color for inputs */
+  border-radius: 20px; /* Rounded edges for inputs */
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: #7289da; /* Highlighted input on focus */
+}
+
+textarea {
+  resize: none;
+}
+
+/* Button Styling */
+button[type="submit"] {
+  background-color: #7289da; /* Soft button color */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 20px; /* Rounded edges for the button */
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+button[type="submit"]:hover {
+  background-color: #5b6eae; /* Darker button on hover */
+}
+
+/* Keyframe Animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Apply Animation to Form */
+form {
+  animation: fadeIn 0.5s ease forwards; /* Animate the form appearance */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .container {
+      padding: 15px;
+  }
+
+  h2 {
+      font-size: 28px;
+  }
+
+  label,
+  button {
+      font-size: 14px;
+  }
+}
